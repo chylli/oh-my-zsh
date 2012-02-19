@@ -21,6 +21,8 @@ version is 4.3.10.
 
     `cp ~/.oh-my-zsh/templates/zshrc.zsh ~/.zshrc`
 
+    `touch ~/.dir_colors`
+
 4. Set Zsh as your default shell:
 
     `chsh -s /bin/zsh`
