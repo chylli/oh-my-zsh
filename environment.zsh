@@ -48,8 +48,10 @@ for path_file in /etc/manpaths.d/*(.N); do
 done
 
 path=(
+  $HOME/bin
   $HOME/.tilde/bin
   $HOME/.tilde/opt/bin
+  /opt/context-minimals/texmf-linux/bin/
   /usr/local/bin
   /usr/local/sbin
   /usr/bin
@@ -63,7 +65,7 @@ for path_file in /etc/paths.d/*(.N); do
 done
 
 # Language
-export LANG="en_AU.UTF-8"
+export LANG="zh_CN.UTF-8"
 export LC_ALL="$LANG"
 export LC_COLLATE="$LANG"
 export LC_CTYPE="$LANG"
@@ -92,6 +94,8 @@ if (( $+commands[open] )); then
   export BROWSER='open'
 fi
 
+export BROWSER='google-chrome'
+
 # Less
 export LESSCHARSET="UTF-8"
 export LESSHISTFILE='-'
@@ -113,3 +117,4 @@ if zstyle -t ':omz:environment:termcap' color; then
   export LESS_TERMCAP_us=$'\E[01;32m'      # begin underline
 fi
 
+export auto_proxy=file:///home/chylli/config/home/firefox.pac
