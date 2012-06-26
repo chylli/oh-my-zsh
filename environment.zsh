@@ -58,6 +58,7 @@ path=(
   /bin
   /usr/sbin
   /sbin
+  /usr/bin/core_perl
 )
 
 for path_file in /etc/paths.d/*(.N); do
